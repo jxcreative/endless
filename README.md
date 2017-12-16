@@ -1,2 +1,2 @@
 # Endless
-This is my text repeater web, Endless; https://jxcreative.github.io/Endless/
+This is my text repeater web project, Endless: https://jxcreative.github.io/Endless/
