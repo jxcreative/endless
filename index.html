@@ -1,48 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head> <title> Endless </title> 
-<p align="right"> <font color="white"> A Juan M.F production. </p>
+<p align="right"> A Juan M.F production. </p>
 <STYLE TYPE="text/css" MEDIA=screen>
 <!--
- body {
-    margin: 0;
-    background: url("https://cdn-images-1.medium.com/max/2000/1*yoZ7nrxbphD0cQpGRi1WSg.jpeg");
-    font-family: sans-serif;
-    -webkit-animation: background 25s 0s infinite;
-}
-
-#shadow {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
-#text {
-    width: 95%;
-    height: 25px;
-    position: absolute;
-    top: 25%; left: 50%; transform: translate(-50%, -50%);
-    outline: none;
-    border: none;
-    border-radius: 25px;
-    background: rgba(0, 0, 0, 0.125);
-    color: #FFF;
-    text-align: center;
-    transition-duration: 0.25s;
-}
-
-::placeholder {
-    color: #000;
-    transition-duration: 0.25s;
-}
-
-#text:hover, #text:focus {
-    background: rgba(0, 0, 0, 0.185);
-}
-
-#text:focus::placeholder {
-    opacity: 0;
+  body { background-color: #7ED8FF; } .heading { text-align: center; background-color: #bac3c3; border: 2px solid black; } .left { float: left; padding: 0px 10px 0px 0px; width: 190px; vertical-align: text-top; } .leftnew { float: left; padding: 0px 10px 0px 0px; width: 310px; vertical-align: text-top; } .middle { top: 10px; margin-left: 190px; margin-right: 100px; background-color: #fff; vertical-align: text-top; } .middlenew { top: 10px; margin-left: 310px; margin-right: 100px; background-color: #fff; vertical-align: text-top; } .right { float: right; padding: 0px 0px 0px 5px; width: 100px; vertical-align: text-top; } .rightnew { float: right; padding: 0px 0px 0px 5px; width: 100px; vertical-align: text-top; } .footer { padding-top: 10px; text-align: center; clear: both; } .fatline { height: 3pt; color: #000; background-color: ##3b5999; } pre { border: 2px solid; background-color:#fff; } .alignright { text-align: right; }
 -->
 </STYLE>
 <meta charset="utf-8" />
@@ -51,8 +13,8 @@
         </script>
 </head>
 <body>
-<p> <h1>. </h1> </p>
-<text> <strong> <font color="white"> This is ENDLESS text repeater - Unleash your creativity writing a unlimited number of words or simply repeat a text one million times maximum. </strong> This is the version 1.1.4 </text> 
+<h1 id="endless" align="center">ENDLESS</h1>
+<text> <strong> This is endless text repeater - Unleash your creativity writing a unlimited number of words or simply repeat a text one million times maximum. </strong> This is the version 1.1.3 </text> 
 <hr><form> <table style="font-color:blue;" cellspacing="1" cellpadding="4" width="100%"><tr>
 
 <td align="left" colspan="2"> <strong> <h3> Write something to repeat: </strong> <input type="text" class=input_mid placeholder="KM Sanjay Creations" id="txt" value="TEXT" size="30">
@@ -67,10 +29,9 @@
  
 <h3> Separated by: </h3>
 <td align="center"><label><input type="radio" name="sep" id="sepcomma" value=",">Comma</label>
-<label><input type="radio" name="sep" id="sepspace" checked="" value=" ">Space</label> <label><input type="radio" name="sep" id="sepsemi" value=";">Semi-colon</label> 
+<label><input type="radio" name="sep" id="sepspace" checked="" value=" ">Space</label> <label><input type="radio" name="sep" id="sepsemi" value=";">Semi-colon</label> <label><br><input type="radio" name="sep" id="sepoth" value=""> Enter if other <input type="text" value="" id="ncols" size="4" maxlength="4"> 
 
- </table><hr><table style="font-color:blue;" cellspacing="1" cellpadding="4" width="100%"><tr>
-<td align="center" colspan="2">
-<input type="button" id="btnRun" value="Repeat" onclick="doRepeat()"> </form> 
- 
- </table><hr><table style="font-color:blue;" cellspacing="1" cellpadding="4" width="100%"><tr><td  align="center" colspan="2"><div id="divtxt"> <textarea id="newtxt" rows="15" readonly="readonly" cols="45"></textarea> </div> </div> </table>
+ </table><hr><table style="font-color:blue;" cellspacing="1" cellpadding="4" width="100%"><tr><td align="center">Prefix:
+<input type="text" id="rowtextfront" size="10">
+<td>Suffix:
+<input type="text" id="rowtextback" size="10">
